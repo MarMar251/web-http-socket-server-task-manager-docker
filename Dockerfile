@@ -3,7 +3,7 @@ FROM openjdk:8-jdk-alpine
 LABEL maintainer="Wagner Franchin"
 
 ENV WEBPATH=/webserver/
-ENV WEBSERVER="WebServerSocket"
+ENV WEBSERVER="WebServerHttp"
 
 RUN apk update && apk add ca-certificates wget && update-ca-certificates
 
